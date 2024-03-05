@@ -140,5 +140,6 @@ def feature_importance(model: SklearnModel,
     plt.title("RMSE of full model against null distribution for variable {}".format(variable))
     plt.xlabel("RMSE")
     plt.ylabel("Density")
+    plt.show()
 
     return original_model, null_distribution
